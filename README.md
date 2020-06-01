@@ -9,6 +9,18 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
+<h1 align="center">
+
+![GitHub Starts](https://img.shields.io/github/stars/DanielCabral/Next-Level-Week-1?color=%237159C1&style=for-the-badge)
+![GitHub Languages](https://img.shields.io/github/languages/count/DanielCabral/Next-Level-Week-1?color=%237159c1&style=for-the-badge)
+![GitHub Top Language](https://img.shields.io/github/languages/top/DanielCabral/Next-Level-Week-1?color=7159c1&style=for-the-badge)
+![GitHub Size](https://img.shields.io/github/repo-size/DanielCabral/Next-Level-Week-1?color=%237159c1&style=for-the-badge)
+![GitHub Forks](https://img.shields.io/github/forks/DanielCabral/Next-Level-Week-1?color=%237159c1&style=for-the-badge)
+
+</h1>
+<hr>
+
+
 O *Ecoleta* serve como um link entre empresas que coletam residuos organicos e inorgânicos, com as pessoas que precisam descartar esses residuos. 
 Consiste de uma aplicação web, onde as entidades podem cadastrar os pontos de coleta de residuos e uma aplicação mobile para os usuarios encontrarem e filtrarem pontos de coleta próximos, além de poderem entrar em contato via Whatsapp e E-mail.
 
