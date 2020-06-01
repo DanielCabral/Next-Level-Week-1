@@ -5,15 +5,9 @@
 # Ecoleta (NextLevel Week)
 > Projeto de uma aplicação completa, com back-end em node, front-end em react web e mobile com react native, desenvolvida durante os dias 1 a 5 de junho de 2020.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 <h1 align="center">
 
 ![GitHub Starts](https://img.shields.io/github/stars/DanielCabral/Next-Level-Week-1?color=%237159C1&style=for-the-badge)
-![GitHub Languages](https://img.shields.io/github/languages/count/DanielCabral/Next-Level-Week-1?color=%237159c1&style=for-the-badge)
-![GitHub Top Language](https://img.shields.io/github/languages/top/DanielCabral/Next-Level-Week-1?color=7159c1&style=for-the-badge)
 ![GitHub Size](https://img.shields.io/github/repo-size/DanielCabral/Next-Level-Week-1?color=%237159c1&style=for-the-badge)
 ![GitHub Forks](https://img.shields.io/github/forks/DanielCabral/Next-Level-Week-1?color=%237159c1&style=for-the-badge)
 
