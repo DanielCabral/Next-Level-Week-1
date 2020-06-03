@@ -1,21 +1,22 @@
 import express from 'express';
-import knex from './database/connection';
 
 
 const routes=express.Router();
 
+import PointsController from './controllers/pointsController';
+const pointsController=new PointsController();
 
-routes.get('/items',async(request,response) => {
-    const items= await knex('items').select('*');
+import ItemsController from './controllers/itemsController';
+const itemsController=new ItemsController();
 
-    const sereliazedItems=items.map(item =>{
-        return {
-            title: item.title,
-            image_url: `http://localhost:3333/upload/${item.image}`
-        };
-    });
-    return response.json(sereliazedItems);
-});
+
+routes.get('/items',itemsController.index);
+
+routes.post('/points',pointsController.create);
+routes.get('/points',pointsController.index);
+routes.get('/points/:id',pointsController.show);
+
+
 
 
 
