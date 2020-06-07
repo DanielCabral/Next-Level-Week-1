@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add expo-font@~8.1.0
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add expo-mail-composer@~8.1.0
 
 PATH: 
-  C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;%SUBLIME;C:\TDM-GCC-64\bin;C:\Users\Daniel\AppData\Local\Microsoft\WindowsApps;C:\adb;C:\Program Files\PuTTY\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\Sdk\platform-tools;C:\Android\Sdk\emulator;C:\Android\Sdk\tools;C:\Program Files\Calibre2\;C:\Users\Daniel\AppData\Local\Microsoft\WindowsApps;C:\Users\Daniel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Daniel\AppData\Local\GitHubDesktop\bin;C:\Users\Daniel\AppData\Roaming\npm;C:\Users\Daniel\AppData\Local\Yarn\bin
+  C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;%SUBLIME;C:\TDM-GCC-64\bin;C:\Users\Daniel\AppData\Local\Microsoft\WindowsApps;C:\adb;C:\Program Files\PuTTY\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\Sdk\platform-tools;C:\Android\Sdk\emulator;C:\Android\Sdk\tools;C:\Program Files\Calibre2\;C:\Users\Daniel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Daniel\AppData\Local\GitHubDesktop\bin;C:\Users\Daniel\AppData\Roaming\npm;C:\Users\Daniel\AppData\Local\Yarn\bin
 
 Yarn version: 
   1.22.4
@@ -37,11 +37,13 @@ npm manifest:
       "expo": "^37.0.12",
       "expo-font": "~8.1.0",
       "expo-location": "^8.1.0",
+      "expo-mail-composer": "^8.1.0",
       "react": "16.9.0",
       "react-dom": "16.9.0",
       "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
       "react-native-gesture-handler": "~1.6.0",
       "react-native-maps": "^0.27.1",
+      "react-native-picker-select": "^7.0.0",
       "react-native-reanimated": "~1.7.0",
       "react-native-safe-area-context": "0.7.3",
       "react-native-screens": "~2.2.0",
@@ -2566,12 +2568,19 @@ Lockfile:
       qs "^6.5.0"
       url-parse "^1.4.4"
   
-  expo-location@~8.1.0:
+  expo-location@^8.1.0, expo-location@~8.1.0:
     version "8.1.0"
     resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-8.1.0.tgz#6a71ad9a8b78d5f016a30a02013c3b28f46d0b1b"
     integrity sha512-G9JvsK1t9Z5Iybf+FCG81Jgm9Ee9leqpazxOPVabUJEWu/55Iex3yLGX04BuIA4ozAlJKBPzkhPdyqKdC7zrSw==
     dependencies:
       invariant "^2.2.4"
+  
+  expo-mail-composer@^8.1.0:
+    version "8.1.0"
+    resolved "https://registry.yarnpkg.com/expo-mail-composer/-/expo-mail-composer-8.1.0.tgz#7de693861e374add34ba4da69df677c2d6ba7104"
+    integrity sha512-CMkDa5YX9YZj/ZLHp0f1WAMBrCZjGqsloOH9JzhnCwMVy0BR+lLYoYWiwx2zk2JTpUgADXjdQKK4edDFclGwtg==
+    dependencies:
+      query-string "^6.2.0"
   
   expo-permissions@~8.1.0:
     version "8.1.0"
@@ -4538,6 +4547,15 @@ Lockfile:
       split-on-first "^1.0.0"
       strict-uri-encode "^2.0.0"
   
+  query-string@^6.2.0:
+    version "6.13.0"
+    resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.13.0.tgz#8d875f66581c854d7480ac79478abb847de742f6"
+    integrity sha512-KJe8p8EUcixhPCp4cJoTYVfmgKHjnAB/Pq3fiqlmyNHvpHnOL5U4YE7iI2PYivGHp4HFocWz300906BAQX0H7g==
+    dependencies:
+      decode-uri-component "^0.2.0"
+      split-on-first "^1.0.0"
+      strict-uri-encode "^2.0.0"
+  
   querystringify@^2.1.1:
     version "2.1.1"
     resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
@@ -4610,7 +4628,7 @@ Lockfile:
     dependencies:
       debounce "^1.2.0"
   
-  react-native-svg@11.0.1:
+  react-native-svg@^11.0.1:
     version "11.0.1"
     resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-11.0.1.tgz#e92e7e9f9cb2604333fd5014fd4edcf62fea6496"
     integrity sha512-XriIwSoe9eTtKyqxpNC6POSOqmXAB9mZQOm5tMoaimEqQOMfzgYrBoF9nY6VPGmaH5dRlWBqnnBf389APiZFcQ==

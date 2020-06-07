@@ -9,6 +9,7 @@ import {RectButton} from 'react-native-gesture-handler';
 import * as MailComposer from 'expo-mail-composer';
 import api from '../../services/api'
 
+
 interface Params{
   point_id: number;
 }
@@ -28,6 +29,8 @@ interface Data{
   }[];
 }
 
+
+
 const Detail = () => {
     const [data,setData]=useState<Data>({} as Data);
     const navigation=useNavigation();
@@ -41,7 +44,7 @@ const Detail = () => {
         setData(response.data);
       });
     },[])
-
+    
     function handleNavigationBack(){
         navigation.goBack();
     }
