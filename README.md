@@ -51,7 +51,8 @@ npx start // ou yarn start
 
 
 ## Resultados
-
+### Aplicação Web - Cadastro de pontos de coleta
+![](resultado_web.gif)
 
 ## Historico de versões
 
